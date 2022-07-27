@@ -7,7 +7,7 @@ import TotalMoney from "../../TotalMoney";
 import "./style.css";
 
 function HomePage({ listTransactions, setListTransactions }) {
-  const [userIsLogged, setUserIsLogged] = useState(true);
+  const [userIsLogged, setUserIsLogged] = useState(false);
 
   if (userIsLogged === true) {
     return (
