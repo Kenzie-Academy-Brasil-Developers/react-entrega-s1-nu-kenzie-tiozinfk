@@ -1,0 +1,101 @@
+.form-div .description {
+  display: flex;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  width: 314px;
+  height: 52.8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
+@media (max-width: 650px) {
+  .form-div .description {
+    width: 200px;
+  }
+}
+
+.form-div .Number {
+  display: flex;
+  width: 128px;
+  height: 48px;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  margin-left: -10px;
+}
+
+@media (max-width: 650px) {
+  .form-div .Number {
+    width: 100px;
+  }
+}
+
+.form-div .select {
+  display: flex;
+  background: #f8f9fa;
+  width: 150px;
+  height: 48px;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+}
+
+@media (max-width: 650px) {
+  .form-div .select {
+    width: 100px;
+  }
+}
+
+.div-input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-div button {
+  display: flex;
+  width: 314px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .form-div button {
+    width: 200px;
+  }
+}
+
+.pDescription {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  margin-left: 16px;
+}
+
+.pDiv {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 6rem;
+  margin-left: -40px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .pDiv {
+    gap: 3rem;
+    margin-left: 5px;
+  }
+}
+
+.form-div select {
+  font-family: "Nunito", sans-serif;
+}

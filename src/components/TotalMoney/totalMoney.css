@@ -1,0 +1,36 @@
+.valor-total-text {
+  top: 20px;
+  left: 24px;
+  position: absolute;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.valor-total-number {
+  top: 20px;
+  right: 46px;
+  position: absolute;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.pTotal {
+  position: absolute;
+  top: 56px;
+  left: 24px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+
+  color: #343a40;
+}

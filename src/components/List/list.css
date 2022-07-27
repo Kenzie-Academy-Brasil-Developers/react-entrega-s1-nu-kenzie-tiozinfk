@@ -1,0 +1,130 @@
+.container-list {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+}
+
+.list-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 552px;
+  font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 650px) {
+  .list-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 300px;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 490px) {
+  .list-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    width: 150px;
+    margin-left: 205px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-list h2 {
+    margin-left: 70px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 490px) {
+  .text-list h2 {
+    margin-left: 130px;
+    font-size: 15px;
+  }
+}
+
+.text-list {
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn-todos {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  border-radius: 8px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  width: 69px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-entradas {
+  display: flex;
+  background: #e9ecef;
+  width: 87px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.btn-saidas {
+  display: flex;
+  background: #e9ecef;
+  width: 87px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.btn-div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.ul-cards {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin-left: -40px;
+}
+
+@media (max-width: 650px) {
+  .img-empy {
+    width: 450px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 476px) {
+  .img-empy {
+    width: 320px;
+    margin-left: 130px;
+  }
+}
+
+@media (max-width: 490px) {
+  .list-flex h3 {
+    white-space: nowrap;
+  }
+}

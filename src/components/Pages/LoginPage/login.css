@@ -1,0 +1,52 @@
+.background {
+  background-color: rgb(26, 25, 25);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-login {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.div-content {
+  color: white;
+  width: 260px;
+  line-height: 45px;
+  font-family: "Nunito", sans-serif;
+}
+
+.div-content button {
+  width: 241px;
+  height: 48px;
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.logoBig {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+@media (max-width: 800px) {
+  .logoBig {
+    display: none;
+  }
+
+  .div-content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+}

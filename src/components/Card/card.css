@@ -1,0 +1,92 @@
+.div-entrada {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  width: 560px;
+  height: 87px;
+  display: flex;
+  border-left: 4px;
+  border-color: #03b898;
+  border-left-style: solid;
+}
+
+@media (max-width: 650px) {
+  .div-entrada {
+    width: 400px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 490px) {
+  .div-entrada {
+    width: 250px;
+    margin-left: 150px;
+  }
+}
+
+.div-saida {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  width: 560px;
+  height: 87px;
+  display: flex;
+  border-left: 4px;
+  border-color: #e9ecef;
+  border-left-style: solid;
+}
+
+@media (max-width: 650px) {
+  .div-saida {
+    width: 400px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 490px) {
+  .div-saida {
+    width: 250px;
+    margin-left: 150px;
+  }
+}
+
+.div-cardDescription {
+  display: flex;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  margin-top: -40px;
+  margin-left: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-type {
+  position: absolute;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  margin-top: 55px;
+  margin-left: 18px;
+  font-size: 13px;
+  flex-direction: column;
+}
+
+.div-value {
+  position: absolute;
+  display: flex;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 18px;
+  margin-left: 380px;
+  flex-direction: column;
+  justify-content: right;
+}
+
+@media (max-width: 650px) {
+  .div-value {
+    margin-left: 270px;
+  }
+}
+
+@media (max-width: 490px) {
+  .div-value {
+    margin-left: 190px;
+  }
+}
