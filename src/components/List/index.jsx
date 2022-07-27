@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "../Card";
 import cards from "./cards.png";
 import "./list.css";
