@@ -2,6 +2,7 @@
   background-color: rgb(26, 25, 25);
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .container-login {

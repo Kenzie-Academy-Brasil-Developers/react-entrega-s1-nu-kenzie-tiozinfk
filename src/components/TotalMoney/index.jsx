@@ -7,7 +7,12 @@ const TotalMoney = ({ listTransactions }) => {
   return (
     <div className="valor-total">
       <span className="valor-total-text">Valor Total:</span>
-      <span className="valor-total-number">$ {totalValues}</span>
+      <span className="valor-total-number">
+        {totalValues.toLocaleString("pt-br", {
+          style: "currency",
+          currency: "BRL",
+        })}
+      </span>
       <p className="pTotal">O valor se refere ao saldo</p>
     </div>
   );

@@ -67,6 +67,8 @@
   align-items: center;
 }
 
+
+
 .btn-entradas {
   display: flex;
   background: #e9ecef;
@@ -78,6 +80,9 @@
   font-family: "Nunito", sans-serif;
   border: 1.4px solid #e9ecef;
   border-radius: 8px;
+}
+.btn-active {
+  background: #fd377e;
 }
 
 .btn-saidas {

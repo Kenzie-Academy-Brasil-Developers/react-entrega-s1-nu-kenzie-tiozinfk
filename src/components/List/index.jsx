@@ -5,6 +5,7 @@ import "./list.css";
 
 function List({ listTransactions }) {
   const [listaFiltrada, setListaFiltrada] = useState([]);
+
   console.log(listaFiltrada);
 
   const filtrarTodos = () => {

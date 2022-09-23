@@ -3,10 +3,13 @@ import "./form.css";
 
 function Form({ listTransactions, setListTransactions }) {
   const [userDescription, setUserDescription] = useState("");
-  const [userValue, setUserValue] = useState(0);
+  const [userValue, setUserValue] = useState("");
   const [userType, setUserType] = useState("Entrada");
 
   function list(description, value, type) {
+    if (userDescription === "" || userValue === "") {
+      return alert("Preencha todos os campos");
+    }
     if (userType === "Saida") {
       setListTransactions([
         ...listTransactions,
@@ -49,11 +52,12 @@ function Form({ listTransactions, setListTransactions }) {
         </div>
         <div className="div-input">
           <input
+            value={userValue}
             required
             name="Number"
-            placeholder="1                          R$"
+            placeholder="1                       R$"
             className="Number"
-            type="text"
+            type="number"
             onChange={(evt) => {
               setUserValue(evt.target.value);
             }}
@@ -72,6 +76,9 @@ function Form({ listTransactions, setListTransactions }) {
           onClick={(event) => {
             event.preventDefault();
             list(userDescription, userValue, userType);
+            setUserDescription("");
+            setUserValue("");
+            setUserType("Entrada");
           }}
           className="btnEnviar"
         >

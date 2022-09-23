@@ -7,7 +7,12 @@ function Card({ item, setListTransactions, listTransactions }) {
         <div className="div-entrada">
           <div className="div-cardDescription">{item.description}</div>
           <div className="div-type">{item.type}</div>
-          <div className="div-value">R${item.value}</div>
+          <div className="div-value">
+            {item.value.toLocaleString("pt-br", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </div>
         </div>
       </div>
     );
@@ -17,7 +22,12 @@ function Card({ item, setListTransactions, listTransactions }) {
         <div className="div-saida">
           <div className="div-cardDescription">{item.description}</div>
           <div className="div-type">{item.type}</div>
-          <div className="div-value">R${item.value}</div>
+          <div className="div-value">
+            {item.value.toLocaleString("pt-br", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </div>
         </div>
       </div>
     );
