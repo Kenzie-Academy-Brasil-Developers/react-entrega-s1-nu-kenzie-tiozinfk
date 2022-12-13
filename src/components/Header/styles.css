@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  height: 82px;
+  box-shadow: 0px 4px 32px -7px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.header-container {
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-button {
+  display: flex;
+  background: #e9ecef;
+  width: 64px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
