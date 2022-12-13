@@ -1,16 +1,9 @@
 import "./App.css";
 import { useState } from "react";
-import HomePage from "./components/Pages/HomePage";
+import RouteComponent from "./routes";
 
 function App() {
-  const [listTransactions, setListTransactions] = useState([]);
-
-  return (
-    <HomePage
-      listTransactions={listTransactions}
-      setListTransactions={setListTransactions}
-    />
-  );
+  return <RouteComponent />;
 }
 
 export default App;

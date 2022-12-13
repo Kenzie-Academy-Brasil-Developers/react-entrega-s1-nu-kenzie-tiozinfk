@@ -1,6 +1,6 @@
 import "./card.css";
 
-function Card({ item, setListTransactions, listTransactions }) {
+function Card({ item }) {
   if (item.type === "Entrada") {
     return (
       <div className="card">
