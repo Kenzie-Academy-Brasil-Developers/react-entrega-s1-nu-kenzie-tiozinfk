@@ -61,7 +61,9 @@ function Form({ listTransactions, setListTransactions }) {
 
       <div className="div-input">
         <div className="input-select">
-          <label htmlFor="valor">Valor</label>
+          <label className="label-input" htmlFor="valor">
+            Valor
+          </label>
           <input
             id="valor"
             required
@@ -77,7 +79,9 @@ function Form({ listTransactions, setListTransactions }) {
         </div>
 
         <div className="input-select">
-          <label htmlFor="select-type">Tipo</label>
+          <label className="label-input" htmlFor="select-type">
+            Tipo
+          </label>
           <select
             id="select-type"
             className="select"

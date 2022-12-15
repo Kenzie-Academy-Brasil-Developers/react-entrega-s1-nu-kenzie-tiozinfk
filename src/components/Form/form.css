@@ -47,7 +47,6 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-
   align-items: center;
 }
 
@@ -81,7 +80,7 @@ select {
 @media (max-width: 390px) {
   .form-div {
     gap: 1.5rem;
-    width: 90%;
+    max-width: 90%;
   }
 
   .div-input {
