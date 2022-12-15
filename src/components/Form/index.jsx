@@ -4,7 +4,7 @@ import "./form.css";
 
 function Form({ listTransactions, setListTransactions }) {
   const [userDescription, setUserDescription] = useState("");
-  const [userValue, setUserValue] = useState(0);
+  const [userValue, setUserValue] = useState("");
   const [userType, setUserType] = useState("Entrada");
 
   function list(description, value, type) {
@@ -66,7 +66,7 @@ function Form({ listTransactions, setListTransactions }) {
             id="valor"
             required
             name="Number"
-            placeholder="1                          R$"
+            placeholder="1                       R$"
             className="Number"
             type="number"
             onChange={(evt) => {
