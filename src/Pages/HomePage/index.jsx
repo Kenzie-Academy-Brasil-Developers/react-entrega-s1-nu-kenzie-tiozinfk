@@ -5,12 +5,14 @@ import TotalMoney from "../../components/TotalMoney";
 import "./style.css";
 import { motion } from "framer-motion";
 import { Header } from "../../components/Header";
+import { ToastContainer } from "react-toastify";
 
 function HomePage() {
   const [listTransactions, setListTransactions] = useState([]);
 
   return (
     <>
+      <ToastContainer />
       <Header />
       <motion.div
         className="container-main"

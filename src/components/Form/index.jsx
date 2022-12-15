@@ -36,57 +36,52 @@ function Form({ listTransactions, setListTransactions }) {
         event.preventDefault();
       }}
     >
-      <div className="input-form-values">
-        <div className="input-select">
-          <label htmlFor="label-description" className="pDescription">
-            Descriçao
-          </label>
-          <input
-            id="label-description"
-            name="description"
-            value={userDescription}
-            onChange={(evt) => {
-              setUserDescription(evt.target.value);
-            }}
-            required
-            className="description"
-            type="text"
-            placeholder="Digite aqui sua descrição"
-            maxLength="30"
-          />
-        </div>
+      <div className="input-select">
+        <label htmlFor="label-description" className="pDescription">
+          Descrição
+        </label>
+        <input
+          id="label-description"
+          name="description"
+          value={userDescription}
+          onChange={(evt) => {
+            setUserDescription(evt.target.value);
+          }}
+          required
+          className="description"
+          type="text"
+          placeholder="Digite aqui sua descrição"
+          maxLength="30"
+        />
       </div>
 
       <div className="div-input">
-        <div className="input-form-values">
-          <div className="input-select">
-            <label htmlFor="valor">Valor</label>
-            <input
-              id="valor"
-              required
-              name="Number"
-              placeholder="1                          R$"
-              className="Number"
-              type="text"
-              onChange={(evt) => {
-                setUserValue(evt.target.value);
-              }}
-              maxLength="10"
-            />
-          </div>
+        <div className="input-select">
+          <label htmlFor="valor">Valor</label>
+          <input
+            id="valor"
+            required
+            name="Number"
+            placeholder="1                          R$"
+            className="Number"
+            type="text"
+            onChange={(evt) => {
+              setUserValue(evt.target.value);
+            }}
+            maxLength="10"
+          />
         </div>
-        <div className="input-form-values">
-          <div className="input-select">
-            <label htmlFor="select-type">Tipo</label>
-            <select
-              id="select-type"
-              className="select"
-              onChange={(evt) => setUserType(evt.target.value)}
-            >
-              <option>Entrada</option>
-              <option>Saida</option>
-            </select>
-          </div>
+
+        <div className="input-select">
+          <label htmlFor="select-type">Tipo</label>
+          <select
+            id="select-type"
+            className="select"
+            onChange={(evt) => setUserType(evt.target.value)}
+          >
+            <option>Entrada</option>
+            <option>Saida</option>
+          </select>
         </div>
       </div>
       <button
