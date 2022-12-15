@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import "./form.css";
 
 function Form({ listTransactions, setListTransactions }) {
@@ -7,6 +8,9 @@ function Form({ listTransactions, setListTransactions }) {
   const [userType, setUserType] = useState("Entrada");
 
   function list(description, value, type) {
+    if (description === "" || value === 0) {
+      return toast.error("Preencha todos os campos");
+    }
     if (userType === "Saida") {
       setListTransactions([
         ...listTransactions,
@@ -64,7 +68,7 @@ function Form({ listTransactions, setListTransactions }) {
             name="Number"
             placeholder="1                          R$"
             className="Number"
-            type="text"
+            type="number"
             onChange={(evt) => {
               setUserValue(evt.target.value);
             }}

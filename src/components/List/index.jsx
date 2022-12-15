@@ -6,8 +6,6 @@ import "./list.css";
 function List({ listTransactions, setListTransactions }) {
   const [listaFiltrada, setListaFiltrada] = useState([]);
 
-  console.log(listaFiltrada);
-
   const filtrarTodos = () => {
     setListaFiltrada(listTransactions);
   };

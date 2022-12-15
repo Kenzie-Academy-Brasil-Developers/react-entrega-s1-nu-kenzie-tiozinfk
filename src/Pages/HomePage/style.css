@@ -9,7 +9,8 @@
 
 .list-Flex {
   display: flex;
-  height: 459px;
+  max-height: 479px;
+  overflow: auto;
 }
 
 .TotalMoney {
