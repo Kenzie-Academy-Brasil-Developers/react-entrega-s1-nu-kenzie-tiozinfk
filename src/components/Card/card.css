@@ -4,6 +4,7 @@
   width: 560px;
   height: 87px;
   display: flex;
+  flex-direction: column;
   border-left: 4px;
   border-color: #03b898;
   border-left-style: solid;
@@ -32,6 +33,7 @@
   border-radius: 4px;
   width: 560px;
   height: 87px;
+  flex-direction: column;
   display: flex;
   border-left: 4px;
   border-color: #e9ecef;
@@ -59,7 +61,12 @@
 .fist-line-card {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+}
+
+.second-line-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
 }
 
 .div-cardDescription {
@@ -74,13 +81,14 @@
 }
 
 .div-type {
-  position: absolute;
-  display: flex;
   font-family: "Nunito", sans-serif;
-  margin-top: 55px;
-  margin-left: 18px;
   font-size: 13px;
+  margin-left: 1rem;
   flex-direction: column;
+}
+
+.trash-icon {
+  margin-right: 3rem;
 }
 
 .div-value {

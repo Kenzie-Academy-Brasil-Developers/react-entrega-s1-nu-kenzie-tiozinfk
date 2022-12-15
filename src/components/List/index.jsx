@@ -3,7 +3,7 @@ import Card from "../Card";
 import cards from "./cards.png";
 import "./list.css";
 
-function List({ listTransactions }) {
+function List({ listTransactions, setListTransactions }) {
   const [listaFiltrada, setListaFiltrada] = useState([]);
 
   console.log(listaFiltrada);
@@ -75,7 +75,12 @@ function List({ listTransactions }) {
               ).map((item, index) => {
                 return (
                   <li key={index}>
-                    <Card item={item} />
+                    <Card
+                      index={index}
+                      item={item}
+                      listTransactions={listTransactions}
+                      setListTransactions={setListTransactions}
+                    />
                   </li>
                 );
               })}

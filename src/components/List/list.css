@@ -89,12 +89,12 @@
   }
 
   .btn-div button {
-    width: 60px;
+    width: 65px;
     height: 35px;
   }
 
   .btn:focus {
-    width: 60px;
+    width: 65px;
     height: 35px;
   }
 }
@@ -105,12 +105,12 @@
   }
 
   .btn-div button {
-    width: 57px;
+    width: 65px;
     height: 35px;
   }
 
   .btn:focus {
-    width: 57px;
+    width: 65px;
     height: 35px;
   }
 }

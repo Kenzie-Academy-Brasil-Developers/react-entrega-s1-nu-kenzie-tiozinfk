@@ -31,7 +31,10 @@ function HomePage() {
         </div>
 
         <div className="list-Flex">
-          <List listTransactions={listTransactions} />
+          <List
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
         </div>
       </motion.div>
     </>

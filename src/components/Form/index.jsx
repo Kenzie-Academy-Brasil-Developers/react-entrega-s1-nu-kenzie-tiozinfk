@@ -10,15 +10,22 @@ function Form({ listTransactions, setListTransactions }) {
     if (userType === "Saida") {
       setListTransactions([
         ...listTransactions,
-        { description: description, type: type, value: parseInt(value * -1) },
+        {
+          description: description,
+          type: type,
+          value: parseInt(value * -1),
+        },
       ]);
     } else {
       setListTransactions([
         ...listTransactions,
-        { description: description, type: type, value: parseInt(value) },
+        {
+          description: description,
+          type: type,
+          value: parseInt(value),
+        },
       ]);
     }
-    console.log(type);
   }
 
   return (
