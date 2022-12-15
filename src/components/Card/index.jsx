@@ -5,9 +5,11 @@ function Card({ item }) {
     return (
       <div className="card">
         <div className="div-entrada">
-          <div className="div-cardDescription">{item.description}</div>
+          <div className="fist-line-card">
+            <div className="div-cardDescription">{item.description}</div>
+            <div className="div-value">R${item.value}</div>
+          </div>
           <div className="div-type">{item.type}</div>
-          <div className="div-value">R${item.value}</div>
         </div>
       </div>
     );
@@ -15,9 +17,11 @@ function Card({ item }) {
     return (
       <div className="card">
         <div className="div-saida">
-          <div className="div-cardDescription">{item.description}</div>
+          <div className="fist-line-card">
+            <div className="div-cardDescription">{item.description}</div>
+            <div className="div-value">R${item.value}</div>
+          </div>
           <div className="div-type">{item.type}</div>
-          <div className="div-value">R${item.value}</div>
         </div>
       </div>
     );

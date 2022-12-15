@@ -4,6 +4,7 @@
   height: 82px;
   box-shadow: 0px 4px 32px -7px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+  z-index: 999;
 }
 
 .header-container {

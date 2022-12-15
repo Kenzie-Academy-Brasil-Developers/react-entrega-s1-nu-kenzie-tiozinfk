@@ -23,23 +23,23 @@ function List({ listTransactions }) {
     return (
       <>
         <div className="div-cardsEmpy">
-          <header>
-            <div className="container-list">
-              <div className="list-flex">
-                <h3>Resumo financeiro</h3>
-                <div className="btn-div">
-                  <button className="btn-todos">Todos</button>
-                  <button className="btn-entradas">Entradas</button>
-                  <button className="btn-saidas">Saidas</button>
-                </div>
+          <header className="container-list">
+            <div className="list-flex">
+              <h3>Resumo financeiro</h3>
+              <div className="btn-div">
+                <button className="btn">Todos</button>
+                <button className="btn">Entradas</button>
+                <button className="btn">Saidas</button>
               </div>
             </div>
           </header>
-          <div className="text-list">
-            <h2>Você ainda não possui nenhum lançamento</h2>
-          </div>
-          <div className="div-empy">
-            <img src={cards} alt="listCards" className="img-empy" />
+          <div className="cards-list-container">
+            <div className="text-list">
+              <h2>Você ainda não possui nenhum lançamento</h2>
+            </div>
+            <div className="div-empy">
+              <img src={cards} alt="listCards" className="img-empy" />
+            </div>
           </div>
         </div>
       </>
@@ -53,19 +53,13 @@ function List({ listTransactions }) {
               <div className="list-flex">
                 <h3>Resumo financeiro</h3>
                 <div className="btn-div">
-                  <button className="btn-todos" onClick={() => filtrarTodos()}>
+                  <button className="btn" onClick={() => filtrarTodos()}>
                     Todos
                   </button>
-                  <button
-                    className="btn-entradas"
-                    onClick={() => filtrar("Entrada")}
-                  >
+                  <button className="btn" onClick={() => filtrar("Entrada")}>
                     Entradas
                   </button>
-                  <button
-                    className="btn-saidas"
-                    onClick={() => filtrar("Saida")}
-                  >
+                  <button className="btn" onClick={() => filtrar("Saida")}>
                     Saidas
                   </button>
                 </div>

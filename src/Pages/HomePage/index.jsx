@@ -1,16 +1,14 @@
 import Form from "../../components/Form";
-
 import { useState } from "react";
 import List from "../../components/List";
 import TotalMoney from "../../components/TotalMoney";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Header } from "../../components/Header";
 
 function HomePage() {
   const [listTransactions, setListTransactions] = useState([]);
-  const navigate = useNavigate();
+
   return (
     <>
       <Header />
@@ -32,9 +30,9 @@ function HomePage() {
           </div>
         </div>
 
-        {/* <div className="list-Flex">
+        <div className="list-Flex">
           <List listTransactions={listTransactions} />
-        </div> */}
+        </div>
       </motion.div>
     </>
   );

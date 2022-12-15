@@ -22,63 +22,77 @@ function Form({ listTransactions, setListTransactions }) {
   }
 
   return (
-    <div className="container">
-      <form
-        name="form"
-        className="form-div"
-        onSubmit={(event) => {
-          event.preventDefault();
-        }}
-      >
-        <p className="pDescription">Descriçao</p>
-        <input
-          name="description"
-          value={userDescription}
-          onChange={(evt) => {
-            setUserDescription(evt.target.value);
-          }}
-          required
-          className="description"
-          type="text"
-          placeholder="Digite aqui sua descrição"
-          maxLength="30"
-        />
-        <div className="pDiv">
-          <p className="pNumber">Valor</p>
-          <p className="pSelect">Tipo de valor</p>
-        </div>
-        <div className="div-input">
+    <form
+      name="form"
+      className="form-div"
+      onSubmit={(event) => {
+        event.preventDefault();
+      }}
+    >
+      <div className="input-form-values">
+        <div className="input-select">
+          <label htmlFor="label-description" className="pDescription">
+            Descriçao
+          </label>
           <input
-            required
-            name="Number"
-            placeholder="1                          R$"
-            className="Number"
-            type="text"
+            id="label-description"
+            name="description"
+            value={userDescription}
             onChange={(evt) => {
-              setUserValue(evt.target.value);
+              setUserDescription(evt.target.value);
             }}
-            maxLength="10"
+            required
+            className="description"
+            type="text"
+            placeholder="Digite aqui sua descrição"
+            maxLength="30"
           />
-          <select
-            className="select"
-            onChange={(evt) => setUserType(evt.target.value)}
-          >
-            <option>Entrada</option>
-            <option>Saida</option>
-          </select>
         </div>
-        <button
-          type="submit"
-          onClick={(event) => {
-            event.preventDefault();
-            list(userDescription, userValue, userType);
-          }}
-          className="btnEnviar"
-        >
-          Enviar
-        </button>
-      </form>
-    </div>
+      </div>
+
+      <div className="div-input">
+        <div className="input-form-values">
+          <div className="input-select">
+            <label htmlFor="valor">Valor</label>
+            <input
+              id="valor"
+              required
+              name="Number"
+              placeholder="1                          R$"
+              className="Number"
+              type="text"
+              onChange={(evt) => {
+                setUserValue(evt.target.value);
+              }}
+              maxLength="10"
+            />
+          </div>
+        </div>
+        <div className="input-form-values">
+          <div className="input-select">
+            <label htmlFor="select-type">Tipo</label>
+            <select
+              id="select-type"
+              className="select"
+              onChange={(evt) => setUserType(evt.target.value)}
+            >
+              <option>Entrada</option>
+              <option>Saida</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        onClick={(event) => {
+          event.preventDefault();
+          list(userDescription, userValue, userType);
+        }}
+        className="btnEnviar"
+      >
+        Enviar
+      </button>
+    </form>
   );
 }
 

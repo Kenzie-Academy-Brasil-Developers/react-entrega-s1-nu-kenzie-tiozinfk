@@ -12,14 +12,18 @@
 @media (max-width: 650px) {
   .div-entrada {
     width: 400px;
-    margin-left: 60px;
   }
 }
 
 @media (max-width: 490px) {
   .div-entrada {
-    width: 250px;
-    margin-left: 150px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 365px) {
+  .div-entrada {
+    width: 280px;
   }
 }
 
@@ -37,25 +41,36 @@
 @media (max-width: 650px) {
   .div-saida {
     width: 400px;
-    margin-left: 60px;
   }
 }
 
 @media (max-width: 490px) {
   .div-saida {
-    width: 250px;
-    margin-left: 150px;
+    width: 320px;
   }
 }
 
-.div-cardDescription {
+@media (max-width: 365px) {
+  .div-saida {
+    width: 280px;
+  }
+}
+
+.fist-line-card {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.div-cardDescription {
   font-size: 16px;
   font-family: "Nunito", sans-serif;
-  margin-top: -40px;
+  margin-top: 1rem;
   margin-left: 18px;
-  justify-content: center;
-  flex-direction: column;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .div-type {
@@ -69,25 +84,23 @@
 }
 
 .div-value {
-  position: absolute;
-  display: flex;
   font-size: 13px;
   font-family: "Nunito", sans-serif;
   margin-top: 18px;
-  margin-left: 380px;
+  margin-right: 2rem;
   flex-direction: row;
   justify-content: right;
   gap: 60px;
 }
 
 @media (max-width: 650px) {
-  .div-value {
-    margin-left: 270px;
+  .div-cardDescription {
+    width: 220px;
   }
 }
 
 @media (max-width: 490px) {
-  .div-value {
-    margin-left: 190px;
+  .div-cardDescription {
+    width: 150px;
   }
 }
