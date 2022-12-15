@@ -76,9 +76,10 @@ select {
   align-items: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .form-div {
     gap: 1.5rem;
+    width: 90%;
   }
 
   .div-input {
@@ -95,6 +96,10 @@ select {
   }
 
   .Number {
+    max-width: 80%;
+  }
+
+  .btnEnviar {
     max-width: 80%;
   }
 }
